@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionario sulle Preferenze per le Attività del Weekend</h1>
+        <form action="#" method="post">
+            <!-- Sezione 1: Quanto sei interessato/a? -->
+            <section>
+                <h2>Quanto sei interessato/a?</h2>
+                <p>Per favore, valuta il tuo interesse per le seguenti attività del weekend con un punteggio da 1 a 5, dove:</p>
+                <ul>
+                    <li>1 = Per niente interessato/a</li>
+                    <li>3 = Neutro/a</li>
+                    <li>5 = Molto interessato/a</li>
+                </ul>
+                <div class="grid-question">
+                    <div class="grid-row">
+                        <div class="grid-item">Degustazioni di vini o birre artigianali</div>
+                        <div class="grid-item"><input type="radio" name="degustazioni" value="1"> 1</div>
+                        <div class="grid-item"><input type="radio" name="degustazioni" value="2"> 2</div>
+                        <div class="grid-item"><input type="radio" name="degustazioni" value="3"> 3</div>
+                        <div class="grid-item"><input type="radio" name="degustazioni" value="4"> 4</div>
+                        <div class="grid-item"><input type="radio" name="degustazioni" value="5"> 5</div>
+                    </div>
+                    <!-- Ripeti per le altre attività -->
+                </div>
+            </section>
+
+            <!-- Sezione 2: Preferenze Sociali e di Orario -->
+            <section>
+                <h2>Preferenze Sociali e di Orario</h2>
+                <div class="form-group">
+                    <label>Quale giorno/orario preferisci per le attività di gruppo?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="venerdi" name="giorno" value="Venerdì sera">
+                        <label for="venerdi">Venerdì sera</label>
+                        <input type="checkbox" id="sabato_pomeriggio" name="giorno" value="Sabato pomeriggio">
+                        <label for="sabato_pomeriggio">Sabato pomeriggio</label>
+                        <!-- Aggiungi altre opzioni -->
+                    </div>
+                </div>
+                <!-- Aggiungi altre domande -->
+            </section>
+
+            <!-- Sezione 3: Considerazioni Pratiche -->
+            <section>
+                <h2>Considerazioni Pratiche</h2>
+                <div class="form-group">
+                    <label>Qual è il tempo massimo di viaggio che ti senti a tuo agio a fare per le attività del weekend?</label>
+                    <select name="viaggio">
+                        <option value="meno_30">Meno di 30 minuti</option>
+                        <option value="30_60">30–60 minuti</option>
+                        <option value="oltre_60">Oltre 60 minuti</option>
+                    </select>
+                </div>
+                <!-- Aggiungi altre domande -->
+            </section>
+
+            <!-- Sezione 4: Preferenze di Ambito e Atmosfera -->
+            <section>
+                <h2>Preferenze di Ambito e Atmosfera</h2>
+                <div class="form-group">
+                    <label>Quale atmosfera generale preferisci per un'attività di gruppo?</label>
+                    <select name="atmosfera">
+                        <option value="rilassata">Rilassata e tranquilla</option>
+                        <option value="vivace">Vivace e stimolante</option>
+                        <option value="avventurosa">Avventurosa e all'aperto</option>
+                        <option value="creativa">Creativa e artistica</option>
+                    </select>
+                </div>
+                <!-- Aggiungi altre domande -->
+            </section>
+
+            <!-- Sezione 5: Interessi Specifici e Benessere -->
+            <section>
+                <h2>Interessi Specifici e Benessere</h2>
+                <div class="form-group">
+                    <label>Oltre alle attività elencate, quali sono i tuoi hobby o interessi specifici che ti piacerebbe condividere con il gruppo?</label>
+                    <textarea name="hobby"></textarea>
+                </div>
+                <!-- Aggiungi altre domande -->
+            </section>
+
+            <!-- Sezione 6: Comunicazione e Organizzazione -->
+            <section>
+                <h2>Comunicazione e Organizzazione</h2>
+                <div class="form-group">
+                    <label>Come preferisci essere informato/a sulle prossime attività di gruppo?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="whatsapp" name="comunicazione" value="Gruppo WhatsApp">
+                        <label for="whatsapp">Gruppo WhatsApp</label>
+                        <input type="checkbox" id="email" name="comunicazione" value="Email">
+                        <label for="email">Email</label>
+                        <!-- Aggiungi altre opzioni -->
+                    </div>
+                </div>
+                <!-- Aggiungi altre domande -->
+            </section>
+
+            <!-- Sezione 7: Idee e Suggerimenti -->
+            <section>
+                <h2>Idee e Suggerimenti</h2>
+                <div class="form-group">
+                    <label>Qual è un’attività del weekend che hai sempre voluto provare?</label>
+                    <textarea name="attivita"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Hai suggerimenti per rendere le nostre uscite di gruppo più divertenti o comode?</label>
+                    <textarea name="suggerimenti"></textarea>
+                </div>
+            </section>
+
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+</body>
+</html>
